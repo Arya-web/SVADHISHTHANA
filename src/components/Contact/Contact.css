@@ -1,0 +1,21 @@
+.insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+  padding: 0.5px 1px;
+  border-radius: 2px;
+}
+
+.contact-main {
+  background: url("../../Images/contact2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-shadow: inset 0px 11px 8px -10px #ccc, inset 0px -11px 8px -10px #ccc;
+}
