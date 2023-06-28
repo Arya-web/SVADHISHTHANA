@@ -136,7 +136,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="location"
-                className="h-[200px] w-full md:h-[280px] md:w-[650px] lg:h-[320px] lg:w-[540px]"
+                className="h-[200px] w-full md:h-[280px] md:w-full lg:h-[320px] lg:w-[540px]"
               ></iframe>
             </div>
           </div>
@@ -158,3 +158,4 @@ const Contact = () => {
 };
 
 export default Contact;
+  

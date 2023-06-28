@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="h-screen flex flex-col pt-20 md:pt-0 md:flex md:flex-row shadow-lg" name="home"
+        className="h-screen flex flex-col pt-20 md:pt-0 md:flex md:flex-row justify-center shadow-lg" name="home"
       >
         <div className="order-2 md:order-1 md:w-[50%]">
           <div className="flex justify-center items-center h-full md:ps-10 lg:ps-20">
