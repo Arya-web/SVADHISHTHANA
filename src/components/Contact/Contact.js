@@ -14,7 +14,7 @@ import logo from "../../Images/logo.jpg";
 const Contact = () => {
   return (
     <>
-      <div className="contact-main" name="contact">
+      <div className="contact-main font-body" name="contact">
         <div className="lg:flex lg:flex-row pt-8 md:p-12 justify-around">
           <div className="lg:w-1/2 flex flex-row justify-around">
             <div className="w-full md:flex md:flex-row justify-around">

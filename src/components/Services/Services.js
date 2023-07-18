@@ -25,7 +25,12 @@ const Services = () => {
     <>
       <div className="py-10" name="services">
         <div className="flex justify-center">
-          <h2 className="text-5xl font-bold">Services</h2>
+          <div>
+            <p className="font-body text-green-800 font-semibold tracking-wider text-center py-4">SERVICES</p>
+            <h2 className="text-5xl font-head">
+              Our Variety of Services
+            </h2>
+          </div>
         </div>
         <div className="pt-12">
           <OwlCarousel

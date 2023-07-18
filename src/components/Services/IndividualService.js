@@ -8,10 +8,10 @@ const IndividualService = () => {
         <div className="">
           <img src={serviceImg} alt="serviceImg" className="" />
           <div className="pt-4 px-4">
-            <h2 className="font-bold text-2xl py-1 text-center">
+            <h2 className="font-bold text-2xl py-1 text-center font-head tracking-wider">
               This is the title
             </h2>
-            <p className="text-justify mb-4">
+            <p className="text-justify mb-4 font-body">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
               quod amet cum, id tempore excepturi maxime odit illo sed rem
               necessitatibus totam cumque expedita enim incidunt officiis neque

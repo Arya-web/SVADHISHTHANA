@@ -19,7 +19,7 @@ const Nav = () => {
         <div className="py-4 md:py-3 flex justify-between items-center h-20 md:h-16 lg:h-20">
           <div className="h-full flex justify-center items-center">
             <img src={logo} alt="logo" className="h-full object-contain" />
-            <p className="text-green-600 text-xl md:text-lg lg:text-xl font-medium px-2">
+            <p className="text-green-600 text-xl md:text-lg lg:text-xl font-medium px-2 font-body tracking-wide">
               SVADHISHTHANA
             </p>
           </div>
@@ -33,7 +33,7 @@ const Nav = () => {
           </button>
         </div>
         <div
-          className={`md:gap-8 lg:gap-16 lg:me-8 !visible md:!flex md:basis-auto pb-2 ps-2 md:pb-0 md:ps-0 ${
+          className={`md:gap-8 lg:gap-16 lg:me-8 !visible md:!flex md:basis-auto font-body pb-2 ps-2 md:pb-0 md:ps-0 ${
             Nav ? "hidden" : ""
           }`}
           id="navbarSupportedContent1"

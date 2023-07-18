@@ -11,16 +11,17 @@ const About = () => {
             <div className="flex">
               <div className="px-8 md:px-8 lg:px-20">
                 <div className="">
-                  <h2 className="text-3xl md:text-3xl lg:text-5xl font-semibold text-center">
-                    About Us
+                  <p className="font-body tracking-wider font-semibold text-green-800 py-2">ABOUT US</p>
+                  <h2 className="text-3xl md:text-3xl lg:text-5xl font-head tracking-wider">
+                    We are Amazing
                   </h2>
                   {/* <h2 className="font-bold text-lg md:text-lg lg:text-3xl pt-1">
                     <span className="text-green-600">&</span> OMET LIM
                     CONSECETUR
                   </h2> */}
                 </div>
-                <div className="pt-4 lg:pt-8">
-                  <p className="text-md lg:text-lg text-justify">
+                <div className="pt-4 lg:pt-6">
+                  <p className="text-md lg:text-lg text-justify font-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod enim, harum, culpa eveniet autem perferendis, ut ullam
                     alias quis explicabo officia vero architecto nisi nostrum

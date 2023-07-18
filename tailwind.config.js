@@ -7,6 +7,10 @@ module.exports = {
         mainBG: "#FFFFEB",
         greenMain: "#C4EFDB",
       },
+      fontFamily: {
+        head: ["DM Serif Display", "sans-serif"],
+        body: ["DM Sans", "serif"],
+      },
     },
   },
   plugins: [],
