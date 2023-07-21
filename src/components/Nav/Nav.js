@@ -15,11 +15,11 @@ const Nav = () => {
 
   return (
     <>
-      <div className="fixed w-screen z-10 px-4 md:px-12 lg:px-24 upper-layer md:flex shadow">
+      <div className="px-4 md:px-12 lg:px-24 md:flex items-center justify-between">
         <div className="py-4 md:py-3 flex justify-between items-center h-20 md:h-16 lg:h-20">
           <div className="h-full flex justify-center items-center">
             <img src={logo} alt="logo" className="h-full object-contain" />
-            <p className="text-green-600 text-xl md:text-lg lg:text-xl font-medium px-2 font-body tracking-wide">
+            <p className="text-green-600 text-xl md:text-lg lg:text-xl font-medium px-2   font-body tracking-wide">
               SVADHISHTHANA
             </p>
           </div>

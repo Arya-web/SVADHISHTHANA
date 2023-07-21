@@ -1,0 +1,25 @@
+.banner {
+  background-image: url("../../Images/banner0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 50vw rgba(255,255,255,0.15);
+  animation: myanimation 20s infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    background-image: url("../../Images/banner0.jpg");
+  }
+  33% {
+    background-image: url("../../Images/banner1.jpg");
+  }
+  66% {
+    background-image: url("../../Images/banner2.jpg");
+  }
+  100% {
+    background-image: url("../../Images/banner0.jpg");
+  }
+}

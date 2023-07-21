@@ -2,9 +2,10 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import IndividualService from "./IndividualService";
+import IndividualProblem from "./IndividualProblem";
+import ProbValues from "./ProbValues";
 
-const Services = () => {
+const Problems = () => {
   const state = {
     responsive: {
       0: {
@@ -16,19 +17,21 @@ const Services = () => {
         margin: 100,
       },
       1024: {
-        stagePadding: 350,
-        margin: 200,
+        stagePadding: 150,
+        margin: 0,
       },
     },
   };
   return (
     <>
-      <div className="py-10" name="services">
+      <div className="py-10" name="problems">
         <div className="flex justify-center">
           <div>
-            <p className="font-body text-green-800 font-semibold tracking-wider text-center py-4">SERVICES</p>
+            <p className="font-body text-green-800 font-semibold tracking-wider text-center py-4">
+              PROBLEMS
+            </p>
             <h2 className="text-5xl font-head">
-              Our Variety of Services
+              Problems with existing Structure
             </h2>
           </div>
         </div>
@@ -36,7 +39,7 @@ const Services = () => {
           <OwlCarousel
             className="owl-theme"
             loop
-            items={1}
+            items={3}
             mouseDrag={true}
             touchDrag={true}
             nav={false}
@@ -47,10 +50,14 @@ const Services = () => {
             autoplaySpeed={1000}
             responsive={state.responsive}
           >
-            <IndividualService />
-            <IndividualService />
-            <IndividualService />
-            <IndividualService />
+            {ProbValues.map((problemValue) => (
+              <IndividualProblem
+                title={problemValue.title}
+                body={problemValue.body}
+                key={problemValue.id}
+                id={problemValue.id}
+              />
+            ))}
           </OwlCarousel>
         </div>
       </div>
@@ -58,4 +65,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Problems;
