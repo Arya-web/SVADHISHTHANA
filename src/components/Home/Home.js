@@ -1,34 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Link } from "react-scroll";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 
 const Home = () => {
-  // const [Images, setImages] = useState([]);
+  const [Images, setImages] = useState([]);
 
-  // useEffect(() => {
-  //   const getImages = async () => {
-  //     try {
-  //       await axios({
-  //         method: "get",
-  //         url: "https://www.googleapis.com/drive/v3/files?q='1S_2gwASpU2PeqrMMS9IoRpbNXrs875bU' in parents&key=AIzaSyC0l5avnKRvtPv_8PfBnDpN0YB9LFtfv_I",
-  //       })
-  //         .then((res) => {
-  //           console.log(res.data.files);
-  //           setImages(res.data.files);
-  //         })
-  //         .catch(console.error);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
+  useEffect(() => {
+    const getImages = async () => {
+      try {
+        await axios({
+          method: "get",
+          url: "https://www.googleapis.com/drive/v3/files?q='1S_2gwASpU2PeqrMMS9IoRpbNXrs875bU' in parents&key=AIzaSyC0l5avnKRvtPv_8PfBnDpN0YB9LFtfv_I",
+        })
+          .then((res) => {
+            setImages(res.data.files);
+          })
+          .catch(console.error);
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
-  //   getImages();
-  // }, []);
+    getImages();
+  }, [Images]);
 
   return (
     <>
@@ -78,15 +76,15 @@ const Home = () => {
               // autoplayHoverPause={true}
               autoplaySpeed={1000}
             >
-              {/* {Images.map((image) => ( */}
-              <div className="">
-                <img
-                  src={`https://lh3.googleusercontent.com/d/1yJJjd2ro9E2diD_qA5O1sZT4yxiInqXP`}
-                  alt=""
-                  className="md:h-[18rem] lg:h-[36rem] object-contain"
-                />
-              </div>
-              {/* ))} */}
+              {Images.map((image) => (
+                <div className="" key={image.id}>
+                  <img
+                    src={`https://lh3.googleusercontent.com/d/${image.id}`}
+                    alt=""
+                    className="md:h-[18rem] lg:h-[36rem] object-contain"
+                  />
+                </div>
+              ))}
             </OwlCarousel>
           </div>
         </div>
