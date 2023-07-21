@@ -26,7 +26,7 @@ const Home = () => {
         console.log(error);
       }
     };
-    
+
     getImages();
   }, []);
 
@@ -78,15 +78,15 @@ const Home = () => {
               // autoplayHoverPause={true}
               autoplaySpeed={1000}
             >
-              {Images.map((image) => (
-                <div className="" key={image.id}>
-                  <img
-                    src={`https://lh3.googleusercontent.com/d/${image.id}`}
-                    alt=""
-                    className="md:h-[18rem] lg:h-[36rem] object-contain"
-                  />
-                </div>
-              ))}
+              {/* {Images.map((image) => ( */}
+              <div className="">
+                <img
+                  src={`https://lh3.googleusercontent.com/d/1yJJjd2ro9E2diD_qA5O1sZT4yxiInqXP`}
+                  alt=""
+                  className="md:h-[18rem] lg:h-[36rem] object-contain"
+                />
+              </div>
+              {/* ))} */}
             </OwlCarousel>
           </div>
         </div>
