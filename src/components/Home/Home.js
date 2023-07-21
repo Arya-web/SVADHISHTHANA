@@ -17,7 +17,7 @@ const Home = () => {
           url: "https://www.googleapis.com/drive/v3/files?q='1S_2gwASpU2PeqrMMS9IoRpbNXrs875bU' in parents&key=AIzaSyC0l5avnKRvtPv_8PfBnDpN0YB9LFtfv_I",
         })
           .then((res) => {
-            setImages(res.data.files);
+            setImages(() => res.data.files);
           })
           .catch(console.error);
       } catch (error) {
