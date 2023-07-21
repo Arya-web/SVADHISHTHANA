@@ -71,7 +71,9 @@ const Home = () => {
           <div className="flex justify-center items-center px-4">
             {Loading && (
               <>
-                <div>loading</div>
+                <div className="flex md:h-[18rem] lg:h-[36rem] w-full justify-center items-center">
+                  <div><img src={require('../../Images/loading.gif')} alt="" /></div>
+                </div>
               </>
             )}
             {!Loading && (
