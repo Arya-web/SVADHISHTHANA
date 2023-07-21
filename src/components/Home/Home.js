@@ -1,34 +1,34 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import { Link } from "react-scroll";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { useState } from "react";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
 const Home = () => {
-  const [Images, setImages] = useState([]);
+  // const [Images, setImages] = useState([]);
 
-  useEffect(() => {
-    const getImages = async () => {
-      try {
-        await axios({
-          method: "get",
-          url: "https://www.googleapis.com/drive/v3/files?q='1S_2gwASpU2PeqrMMS9IoRpbNXrs875bU' in parents&key=AIzaSyC0l5avnKRvtPv_8PfBnDpN0YB9LFtfv_I",
-        })
-          .then((res) => {
-            console.log(res.data.files);
-            setImages(res.data.files);
-          })
-          .catch(console.error);
-      } catch (error) {
-        console.log(error);
-      }
-    };
+  // useEffect(() => {
+  //   const getImages = async () => {
+  //     try {
+  //       await axios({
+  //         method: "get",
+  //         url: "https://www.googleapis.com/drive/v3/files?q='1S_2gwASpU2PeqrMMS9IoRpbNXrs875bU' in parents&key=AIzaSyC0l5avnKRvtPv_8PfBnDpN0YB9LFtfv_I",
+  //       })
+  //         .then((res) => {
+  //           console.log(res.data.files);
+  //           setImages(res.data.files);
+  //         })
+  //         .catch(console.error);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
 
-    getImages();
-  }, []);
+  //   getImages();
+  // }, []);
 
   return (
     <>
