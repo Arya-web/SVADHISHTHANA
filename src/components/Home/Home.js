@@ -18,7 +18,9 @@ const Home = () => {
           .then((res) => {
             const newData = res.data.files;
             console.log(newData);
-            setImages([...newData]);
+            newData.forEach(element => {
+              setImages(prevData => ([...prevData, element.id]))
+            });
           })
           .catch(console.error);
       } catch (error) {
@@ -79,9 +81,9 @@ const Home = () => {
               autoplaySpeed={1000}
             >
               {Images.map((image) => (
-                <div className="" key={image.id}>
+                <div className="" key={image}>
                   <img
-                    src={`https://lh3.googleusercontent.com/d/${image.id}`}
+                    src={`https://lh3.googleusercontent.com/d/${image}`}
                     alt=""
                     className="md:h-[18rem] lg:h-[36rem] object-contain"
                   />
