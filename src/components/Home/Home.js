@@ -7,7 +7,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import axios from "axios";
 
 const Home = () => {
-  const [Images, setImages] = useState([]);  
+  const [Images, setImages] = useState([]);
+  const [Loading, setLoading] = useState(false);
   useEffect(() => {
     const getImages = async () => {
       try {
@@ -18,9 +19,10 @@ const Home = () => {
           .then((res) => {
             const newData = res.data.files;
             console.log(newData);
-            newData.forEach(element => {
-              setImages(prevData => ([...prevData, element.id]))
+            newData.forEach((element) => {
+              setImages((prevData) => [...prevData, element.id]);
             });
+            setLoading(false);
           })
           .catch(console.error);
       } catch (error) {
@@ -28,6 +30,7 @@ const Home = () => {
       }
     };
 
+    setLoading(true);
     getImages();
   }, []);
 
@@ -66,30 +69,37 @@ const Home = () => {
         </div>
         <div className="order-1 md:order-2 md:w-[70%]">
           <div className="flex justify-center items-center px-4">
-            <OwlCarousel
-              id="imagesSection"
-              className="owl-theme py-2"
-              loop
-              items={1}
-              mouseDrag={true}
-              touchDrag={true}
-              nav={false}
-              dots={true}
-              autoplay={true}
-              autoplayTimeout={4000}
-              // autoplayHoverPause={true}
-              autoplaySpeed={1000}
-            >
-              {Images.map((image) => (
-                <div className="" key={image}>
-                  <img
-                    src={`https://lh3.googleusercontent.com/d/${image}`}
-                    alt=""
-                    className="md:h-[18rem] lg:h-[36rem] object-contain"
-                  />
-                </div>
-              ))}
-            </OwlCarousel>
+            {Loading && (
+              <>
+                <div>loading</div>
+              </>
+            )}
+            {!Loading && (
+              <OwlCarousel
+                id="imagesSection"
+                className="owl-theme py-2"
+                loop
+                items={1}
+                mouseDrag={true}
+                touchDrag={true}
+                nav={false}
+                dots={true}
+                autoplay={true}
+                autoplayTimeout={4000}
+                // autoplayHoverPause={true}
+                autoplaySpeed={1000}
+              >
+                {Images.map((image) => (
+                  <div className="" key={image}>
+                    <img
+                      src={`https://lh3.googleusercontent.com/d/${image}`}
+                      alt=""
+                      className="md:h-[18rem] lg:h-[36rem] object-contain"
+                    />
+                  </div>
+                ))}
+              </OwlCarousel>
+            )}
           </div>
         </div>
       </div>
