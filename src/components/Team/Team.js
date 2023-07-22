@@ -17,7 +17,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="px-6 md:px-16 lg:px-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 lg:gap-12 py-4 lg:py-8 pb-4">
+        <div className="px-6 md:px-16 lg:px-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 md:gap-x-8 lg:gap-x-12 py-4 lg:py-8 pb-4">
           {MemberValues.map((Member) => (
             <IndividualMembers
               key={Member.id}
