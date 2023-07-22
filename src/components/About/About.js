@@ -36,7 +36,7 @@ const About = () => {
         </div>
         <div className="order-2 md:order-1 md:w-[50%]">
           <div className="landingDiv">
-            <img src={about} alt="" className="object-contain scale-75" />
+            <img src={about} alt="" className="object-contain m-auto" />
           </div>
         </div>
       </div>

@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </div>
         <div className="order-1 md:order-2 md:w-[70%]">
-          <div className="flex justify-center items-center px-4">
+          <div className="flex justify-center items-center px-4 h-full">
             {Loading && (
               <>
                 <div className="flex md:h-[18rem] lg:h-[36rem] w-full justify-center items-center">
