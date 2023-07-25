@@ -6,7 +6,7 @@ import IndividualMembers from "./IndividualMembers";
 const Team = () => {
   return (
     <>
-      <div className="pt-8">
+      <div className="pt-8" name="team">
         <div className="flex justify-center items-center">
           <div className="pt-4 text-center">
             <h2 className="text-3xl md:text-3xl lg:text-5xl font-head tracking-wider">

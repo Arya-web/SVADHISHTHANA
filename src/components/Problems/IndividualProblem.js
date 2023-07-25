@@ -13,7 +13,7 @@ const IndividualProblem = ({ title, body, id }) => {
             />
           </div>
           <div className="pt-4 px-2">
-            <h2 className="font-bold text-xl md:text-2xl py-1 text-center font-head tracking-wider">
+            <h2 className="font-semibold text-xl md:text-2xl py-1 text-center font-head tracking-wider">
               {title}
             </h2>
             <p className="text-justify mb-4 font-body">{body}</p>

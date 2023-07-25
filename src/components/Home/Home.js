@@ -18,7 +18,6 @@ const Home = () => {
         })
           .then((res) => {
             const newData = res.data.files;
-            console.log(newData);
             newData.forEach((element) => {
               setImages((prevData) => [...prevData, element.id]);
             });
@@ -55,7 +54,7 @@ const Home = () => {
                 <div className="pt-4 md:pt-8 flex justify-center items-center">
                   <Link
                     type="button"
-                    className="bg-green-500 font-semibold text-white p-4 px-6 rounded-md font-body cursor-pointer"
+                    className="bg-green-500 font-semibold text-white p-4 px-6 md:p-2 md:px-4 lg:p-4 lg:px-6  rounded-md font-body cursor-pointer"
                     to="about"
                     smooth={true}
                     offset={-150}
@@ -72,7 +71,9 @@ const Home = () => {
             {Loading && (
               <>
                 <div className="flex md:h-[18rem] lg:h-[36rem] w-full justify-center items-center">
-                  <div><img src={require('../../Images/loading.gif')} alt="" /></div>
+                  <div>
+                    <img src={require("../../Images/loading.gif")} alt="" />
+                  </div>
                 </div>
               </>
             )}

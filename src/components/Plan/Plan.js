@@ -5,12 +5,18 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullseye, faPenNib, faRocket, faStore, faWrench } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBullseye,
+  faPenNib,
+  faRocket,
+  faStore,
+  faWrench,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Plan = () => {
   return (
     <>
-      <div className="bg-greenMain font-body">
+      <div className="bg-greenMain font-body plan-main" name="plan">
         <div className="flex justify-center items-center">
           <div className="text-center py-6 lg:py-10">
             <p className="font-body tracking-wider font-semibold text-green-600 py-2">

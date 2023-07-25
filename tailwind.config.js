@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         head: ["DM Serif Display", "sans-serif"],
         body: ["DM Sans", "serif"],
+        logo: ["Italiana", "serif"],
       },
     },
   },

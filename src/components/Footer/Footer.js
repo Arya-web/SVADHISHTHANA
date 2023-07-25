@@ -9,7 +9,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
-import logo from "../../Images/logo.jpg";
+import logo from "../../Images/logo512-black.png";
 
 const Footer = () => {
   return (
@@ -141,11 +141,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pt-8 md:pt-0 pb-8">
+        <div className="pt-8 md:pt-0 pb-8 opacity-50">
           <div className="flex justify-center h-14">
             <img src={logo} alt="logo" />
           </div>
-          <div className="flex justify-center pt-3 text-slate-500 text-sm text-center px-4 font-semibold">
+          <div className="flex justify-center pt-3 text-sm text-center px-4 font-semibold">
             <h2>
               Copyright &#169; 2019-2023 SVADHISHTHANA TECHNOLOGIES Pvt.
               Ltd&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All rights reserved.

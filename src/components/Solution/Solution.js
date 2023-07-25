@@ -4,7 +4,7 @@ import IndividualSolution from "./IndividualSolution";
 const Solution = () => {
   return (
     <>
-      <div className="py-8">
+      <div className="py-8" name="solution">
         <div className="flex justify-center items-center">
           <div className="pt-4 text-center">
             <h2 className="text-3xl md:text-3xl lg:text-5xl font-head tracking-wider">

@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   About,
+  FakeNav,
   Footer,
   Home,
   Mission,
@@ -22,6 +23,7 @@ function App() {
             element={
               <>
                 <Nav />
+                <FakeNav />
                 <Home />
                 <About />
                 <Problems />
