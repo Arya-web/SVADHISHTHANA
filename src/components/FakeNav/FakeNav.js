@@ -37,9 +37,8 @@ const FakeNav = () => {
     NavScrollHandler();
   }, [NavScrollHandler]);
 
-  const toggleHandler = () => {
-    console.log("triggered");
-    setNav((Nav) => !Nav);
+  const toggleHandler = (e) => {
+    setNav(() => e);
   };
 
   return (
@@ -65,14 +64,24 @@ const FakeNav = () => {
                 SVADHISHTHANA
               </p>
             </div>
-            <button
-              className="block w-10 scale-110 border-2 rounded-full py-1 bg-transparent px-2 text-neutral-700 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
-              type="button"
-              onClick={toggleHandler}
-            >
-              {Nav && <FontAwesomeIcon icon={faBars} />}
-              {!Nav && <FontAwesomeIcon icon={faXmark} />}
-            </button>
+            {Nav && (
+              <button
+                className="block w-10 scale-110 border-2 rounded-full py-1 bg-transparent px-2 text-neutral-700 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+                type="button"
+                onClick={() => toggleHandler(false)}
+              >
+                <FontAwesomeIcon icon={faBars} />
+              </button>
+            )}
+            {!Nav && (
+              <button
+                className="block w-10 scale-110 border-2 rounded-full py-1 bg-transparent px-2 text-neutral-700 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+                type="button"
+                onClick={() => toggleHandler(true)}
+              >
+                <FontAwesomeIcon icon={faXmark} />
+              </button>
+            )}
           </div>
           <div
             className={`md:gap-1 lg:gap-10 lg:me-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-base pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
@@ -81,17 +90,14 @@ const FakeNav = () => {
             id="navbarSupportedContent1"
             data-te-collapse-item
           >
-            <div
-              className="cursor-pointer group hover:text-green-600 py-4"
-              onClick={toggleHandler}
-            >
+            <div className="cursor-pointer group hover:text-green-600 py-4">
               <Link
                 className={`font-medium p-2 rounded transition-all duration-200 ease-out hover:bg-green-500 hover:text-white ${
                   DivName === "home" ? "bg-green-500 text-white" : ""
                 }`}
                 onClick={() => {
                   handleToTop();
-                  toggleHandler();
+                  toggleHandler(true);
                 }}
                 smooth={true}
               >
@@ -106,7 +112,7 @@ const FakeNav = () => {
                 to="about"
                 smooth={true}
                 offset={-60}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 ABOUT
               </Link>
@@ -119,7 +125,7 @@ const FakeNav = () => {
                 to="problems"
                 smooth={true}
                 offset={-40}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 PROBLEMS
               </Link>
@@ -132,7 +138,7 @@ const FakeNav = () => {
                 to="mission"
                 smooth={true}
                 offset={-150}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 MISSION
               </Link>
@@ -145,7 +151,7 @@ const FakeNav = () => {
                 to="solution"
                 smooth={true}
                 offset={-100}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 SOLUTION
               </Link>
@@ -158,7 +164,7 @@ const FakeNav = () => {
                 to="plan"
                 smooth={true}
                 offset={-60}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 PLAN
               </Link>
@@ -171,7 +177,7 @@ const FakeNav = () => {
                 to="team"
                 smooth={true}
                 offset={-80}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 TEAM
               </Link>
@@ -183,7 +189,7 @@ const FakeNav = () => {
                 }`}
                 to="contact"
                 smooth={true}
-                onClick={toggleHandler}
+                onClick={() => toggleHandler(true)}
               >
                 CONTACT
               </Link>
