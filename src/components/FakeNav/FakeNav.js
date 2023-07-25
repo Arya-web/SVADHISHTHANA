@@ -75,7 +75,7 @@ const FakeNav = () => {
             </button>
           </div>
           <div
-            className={`md:gap-1 lg:gap-10 lg:me-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-base pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 ${
+            className={`md:gap-1 lg:gap-10 lg:me-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-base pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
               Nav ? "hidden" : ""
             }`}
             id="navbarSupportedContent1"
