@@ -45,7 +45,7 @@ const Home = () => {
               <div className="px-8 md:px-0">
                 <div className="text-center">
                   <h2 className="text-3xl md:text-2xl lg:text-5xl font-head tracking-wide">
-                    Svadhisthana Green Energies Pvt. Ltd.
+                    Svadhishthana Green Energies Pvt. Ltd.
                   </h2>
                   <h2 className="font-bold text-lg md:text-lg lg:text-2xl font-body tracking-widest text-green-500 uppercase py-4">
                     <q> Take a ride on the Green Side </q>
