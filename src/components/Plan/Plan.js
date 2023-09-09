@@ -1,17 +1,5 @@
 import React from "react";
 import "./Plan.css";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBullseye,
-  faPenNib,
-  faRocket,
-  faStore,
-  faWrench,
-} from "@fortawesome/free-solid-svg-icons";
 import launching from "../../Images/launching.png"
 
 const Plan = () => {
@@ -31,78 +19,7 @@ const Plan = () => {
         <div className="text-center">
           <img src={launching} alt="" className="object-contain m-auto scale-[60%]" />
         </div>
-        {/* <VerticalTimeline lineColor="white">
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{ borderBottomColor: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            iconStyle={{ background: "#5A6F7F", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faWrench} />}
-          >
-            <h3 className="vertical-timeline-element-title font-semibold text-xl">
-              PLANNING
-            </h3>
-            <p>
-              Survey of possible technologies & innovations, Designing products
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{ borderBottomColor: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            iconStyle={{ background: "#5A6F7F", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faStore} />}
-          >
-            <h3 className="vertical-timeline-element-title font-semibold text-xl">
-              MARKETING
-            </h3>
-            <p>Disseminate standardized metrics</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{ borderBottomColor: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            iconStyle={{ background: "#5A6F7F", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faPenNib} />}
-          >
-            <h3 className="vertical-timeline-element-title font-semibold text-xl">
-              DESIGN
-            </h3>
-            <p>
-              Coordinate with businesses for our requirement and set the model
-              for manufacturing
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{ borderBottomColor: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            iconStyle={{ background: "#5A6F7F", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faBullseye} />}
-          >
-            <h3 className="vertical-timeline-element-title font-semibold text-xl">
-              STRATEGY
-            </h3>
-            <p>Foster holistically superior methodologies</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{ borderBottomColor: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            iconStyle={{ background: "#5A6F7F", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faRocket} />}
-          >
-            <h3 className="vertical-timeline-element-title font-semibold text-xl">
-              LAUNCH
-            </h3>
-            <p>Deploy strategic networks with compelling e-business needs</p>
-          </VerticalTimelineElement>
-        </VerticalTimeline> */}
+        
       </div>
     </>
   );
