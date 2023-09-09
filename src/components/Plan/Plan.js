@@ -12,13 +12,14 @@ import {
   faStore,
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
+import launching from "../../Images/launching.png"
 
 const Plan = () => {
   return (
     <>
-      <div className="bg-greenMain font-body plan-main" name="plan">
+      <div className="bg-greenMain font-body plan-main py-8" name="plan">
         <div className="flex justify-center items-center">
-          <div className="text-center py-6 lg:py-10">
+          <div className="text-center lg:py-4">
             <p className="font-body tracking-wider font-semibold text-green-600 py-2">
               OUR PLANS
             </p>
@@ -27,7 +28,10 @@ const Plan = () => {
             </h2>
           </div>
         </div>
-        <VerticalTimeline lineColor="white">
+        <div className="text-center">
+          <img src={launching} alt="" className="object-contain m-auto scale-[60%]" />
+        </div>
+        {/* <VerticalTimeline lineColor="white">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2010 - 2011"
@@ -98,7 +102,7 @@ const Plan = () => {
             </h3>
             <p>Deploy strategic networks with compelling e-business needs</p>
           </VerticalTimelineElement>
-        </VerticalTimeline>
+        </VerticalTimeline> */}
       </div>
     </>
   );

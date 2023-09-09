@@ -3,7 +3,7 @@ import React from "react";
 const IndividualSolution = ({ title, id }) => {
   return (
     <>
-      <div className="text-center rounded scale-90 hover:scale-100 md:scale-75 md:hover:scale-90 transition cursor-pointer">
+      <div className="text-center rounded scale-90 hover:scale-100 md:scale-75 md:hover:scale-90 transition cursor-pointer opacity-90 hover:opacity-100">
         <div className="">
           <div className="">
             <img

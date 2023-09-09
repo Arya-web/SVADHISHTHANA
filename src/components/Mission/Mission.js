@@ -6,7 +6,7 @@ const Mission = () => {
   return (
     <>
       <div
-        className="flex flex-col pt-10 md:flex md:flex-row md:px-10 lg:px-20 bg-[#E8FBF5] py-16 mission-main"
+        className="flex flex-col py-8 md:flex md:flex-row md:px-10 lg:px-20 bg-[#E8FBF5] mission-main"
         name="mission"
       >
         <div className="order-2 md:order-1 md:w-[60%]">
@@ -22,19 +22,15 @@ const Mission = () => {
                   </h2>
                 </div>
                 <div className="pt-4 lg:pt-6">
-                  <p className="text-md md:text-sm lg:text-lg text-justify font-body px-6 md:px-0">
-                    As a renewable energy integrator & provider, we lead the
-                    quest to change the world as the trusted sustainability
-                    partner creating valued non-conventional energy efficient
-                    solutions. We ought to create higher quality and energy
-                    efficient products for domestic and commercial purpose. We
-                    also provide green energy options, such as energy storage
-                    devices, wind turbines, and solar panels, all of which can
-                    be used with or without our appliances. We want to promote
-                    sustainable living by offering eco-friendly alternatives,
-                    and affordable with easy access to everyone, for the
-                    traditional appliances and energy sources and contribute
-                    towards a cleaner and greener future.
+                  <p className="text-md md:text-sm lg:text-lg text-justify font-body px-6">
+                    As a renewable energy integrator & provider, we act as the
+                    trusted sustainability partner creating valued
+                    nonconventional energy efficient solutions. We ought to
+                    create higher quality and energy efficient products for
+                    domestic and commercial purpose. With our innovative
+                    products we help in creating a better world for our
+                    stakeholders – our customers, our people, our investors and
+                    the planet we all share.
                   </p>
                 </div>
               </div>
