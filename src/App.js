@@ -1,18 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {
-  About,
-  FakeNav,
-  Footer,
-  Home,
-  Mission,
-  Nav,
-  NotFound,
-  Plan,
-  Problems,
-  Solution,
-  Team,
-} from "./components";
+import { NotFound } from "./components";
 
 function App() {
   return (
