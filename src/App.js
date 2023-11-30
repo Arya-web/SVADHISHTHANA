@@ -7,6 +7,7 @@ import {
   Home,
   Mission,
   Nav,
+  NotFound,
   Plan,
   Problems,
   Solution,
@@ -22,7 +23,7 @@ function App() {
             path="/"
             element={
               <>
-                <Nav />
+                {/* <Nav />
                 <FakeNav />
                 <Home />
                 <About />
@@ -31,7 +32,8 @@ function App() {
                 <Solution />
                 <Plan />
                 <Team />
-                <Footer />
+                <Footer /> */}
+                <NotFound />
               </>
             }
           />

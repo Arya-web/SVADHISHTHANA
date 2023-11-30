@@ -8,3 +8,4 @@ export { default as Mission } from "./Mission/Mission";
 export { default as Plan } from "./Plan/Plan";
 export {default as Solution } from "./Solution/Solution";
 export {default as Team } from "./Team/Team";
+export {default as NotFound} from "./NotFound/NotFound";

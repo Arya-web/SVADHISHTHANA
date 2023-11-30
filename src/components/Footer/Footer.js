@@ -125,7 +125,7 @@ const Footer = () => {
                     >
                       <FontAwesomeIcon
                         icon={faFacebook}
-                        className="scale-125 text-blue-800"
+                        className="scale-150 text-blue-800"
                       />
                     </a>
                     <a
@@ -136,7 +136,7 @@ const Footer = () => {
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
-                        className="scale-125 text-blue-600"
+                        className="scale-150 text-blue-600"
                       />
                     </a>
                     <a
@@ -147,7 +147,7 @@ const Footer = () => {
                     >
                       <FontAwesomeIcon
                         icon={faTwitter}
-                        className="scale-125 text-blue-400"
+                        className="scale-150 text-blue-400"
                       />
                     </a>
                     <a
@@ -158,7 +158,7 @@ const Footer = () => {
                     >
                       <FontAwesomeIcon
                         icon={faYoutube}
-                        className="scale-125 text-red-600"
+                        className="scale-150 text-red-600"
                       />
                     </a>
                     <a
@@ -169,7 +169,7 @@ const Footer = () => {
                     >
                       <FontAwesomeIcon
                         icon={faInstagram}
-                        className="scale-125 insta"
+                        className="scale-150 insta"
                       />
                     </a>
                   </div>
@@ -178,8 +178,8 @@ const Footer = () => {
             </div>
             <div className="md:px-4 w-80">
               <h2 className="text-xl font-semibold">CONTACT US</h2>
-              <p className="pt-2">Office : 0222-548795</p>
-              <p className="pt-1">Mobile : +91 6370 106 855</p>
+              <p className="pt-2">Office : +91 90787 83790</p>
+              <p className="pt-1">Mobile : +91 90787 83790</p>
               <div className="pt-8">
                 <h2 className="text-xl font-semibold">WRITE TO US</h2>
                 <p className="pt-2 font-bold text-blue-800 underline text-xs md:text-sm pr-2 md:pr-0">
