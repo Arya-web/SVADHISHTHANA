@@ -11,7 +11,7 @@ function App() {
             path="/"
             element={
               <>
-                {/* <Nav />
+                <Nav />
                 <FakeNav />
                 <Home />
                 <About />
@@ -20,8 +20,8 @@ function App() {
                 <Solution />
                 <Plan />
                 <Team />
-                <Footer /> */}
-                <NotFound />
+                <Footer />
+                {/* <NotFound /> */}
               </>
             }
           />
