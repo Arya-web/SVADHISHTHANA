@@ -61,7 +61,7 @@ const Footer = () => {
                     </span>
                     <p className="font-medium cursor-pointer">
                       <Link to="about" smooth={true} offset={-60}>
-                        About
+                        Why Solar?
                       </Link>
                     </p>
                   </div>
@@ -70,8 +70,8 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faCircle} className="scale-50" />
                     </span>
                     <p className="font-medium cursor-pointer">
-                      <Link to="problems" smooth={true} offset={-40}>
-                        Problems
+                      <Link to="whyUs" smooth={true} offset={-40}>
+                        Why Us?
                       </Link>
                     </p>
                   </div>
@@ -80,12 +80,12 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faCircle} className="scale-50" />
                     </span>
                     <p className="font-medium cursor-pointer">
-                      <Link to="mission" smooth={true} offset={-150}>
-                        Mission
+                      <Link to="process" smooth={true} offset={-150}>
+                        The Process
                       </Link>
                     </p>
                   </div>
-                  <div className="flex gap-2">
+                  {/* <div className="flex gap-2">
                     <span className="scale-75">
                       <FontAwesomeIcon icon={faCircle} className="scale-50" />
                     </span>
@@ -104,7 +104,7 @@ const Footer = () => {
                         Plan
                       </Link>
                     </p>
-                  </div>
+                  </div> */}
                   <div className="flex gap-2">
                     <span className="scale-75">
                       <FontAwesomeIcon icon={faCircle} className="scale-50" />

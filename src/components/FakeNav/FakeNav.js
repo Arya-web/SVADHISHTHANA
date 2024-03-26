@@ -6,6 +6,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import GetScrollY from "../../Customhooks/GetScrollY";
 import GetDivY from "../../Customhooks/GetDivY";
+import { Link as OuterLink } from "react-router-dom";
 
 const FakeNav = () => {
   const [Nav, setNav] = useState(true);
@@ -44,23 +45,33 @@ const FakeNav = () => {
   return (
     <>
       <div
-        className={`fixed bg-white top-0 w-full z-50 shadow-lg ${
+        className={`fixed bg-white top-0 w-full z-50 ${
           NavScroller ? "" : "hidden"
         }`}
+        style={{
+          boxShadow: `rgba(0, 0, 0, 0.17) 0px 12px 12px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
+        }}
       >
         <div
           className={`z-10 px-4 md:px-8 lg:px-24 md:flex items-center justify-between w-full`}
         >
           <div
-            className={`py-4 md:py-3 flex justify-between items-center h-16 md:h-12 lg:h-16`}
+            className={`py-4 md:py-3 flex justify-between items-center h-16 md:h-12 lg:h-20`}
           >
-            <div className={`lg:h-4/5 flex justify-center items-center h-full`}>
+            <div
+              className={`lg:h-4/5 flex justify-center items-center h-full cursor-pointer`}
+              onClick={() => {
+                handleToTop();
+                toggleHandler(true);
+              }}
+              smooth={true}
+            >
               <img
                 src={logoBlack}
                 alt="logo"
                 className="h-full object-contain"
               />
-              <p className="text-xl md:text-lg lg:text-xl font-semibold px-2 font-logo tracking-widest">
+              <p className="text-xl md:text-lg lg:text-2xl font-semibold px-2 font-logo tracking-widest">
                 SVADHISHTHANA
               </p>
             </div>
@@ -84,7 +95,7 @@ const FakeNav = () => {
             )}
           </div>
           <div
-            className={`md:gap-1 lg:gap-10 lg:me-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-base pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
+            className={`md:gap-1 lg:gap-10 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-lg pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
               Nav ? "hidden" : ""
             }`}
             id="navbarSupportedContent1"
@@ -114,36 +125,48 @@ const FakeNav = () => {
                 offset={-60}
                 onClick={() => toggleHandler(true)}
               >
-                ABOUT
+                WHY SOLAR?
               </Link>
             </div>
             <div className="cursor-pointer group hover:text-green-600 py-4">
               <Link
                 className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out ${
-                  DivName === "problems" ? "bg-green-500 text-white" : ""
+                  DivName === "whyUs" ? "bg-green-500 text-white" : ""
                 }`}
-                to="problems"
+                to="whyUs"
                 smooth={true}
-                offset={-40}
+                offset={-20}
                 onClick={() => toggleHandler(true)}
               >
-                PROBLEMS
+                WHY US?
               </Link>
             </div>
             <div className="cursor-pointer group hover:text-green-600 py-4">
               <Link
                 className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out ${
-                  DivName === "mission" ? "bg-green-500 text-white" : ""
+                  DivName === "process" ? "bg-green-500 text-white" : ""
                 }`}
-                to="mission"
+                to="process"
                 smooth={true}
-                offset={-150}
+                offset={-10}
                 onClick={() => toggleHandler(true)}
               >
-                MISSION
+                THE PROCESS
               </Link>
             </div>
             <div className="cursor-pointer group hover:text-green-600 py-4">
+              <OuterLink
+                className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out`}
+                to="/products"
+                relative="path"
+                smooth={true}
+                offset={-10}
+                onClick={() => toggleHandler(true)}
+              >
+                PRODUCTS
+              </OuterLink>
+            </div>
+            {/* <div className="cursor-pointer group hover:text-green-600 py-4">
               <Link
                 className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out ${
                   DivName === "solution" ? "bg-green-500 text-white" : ""
@@ -168,7 +191,7 @@ const FakeNav = () => {
               >
                 PLAN
               </Link>
-            </div>
+            </div> */}
             <div className="cursor-pointer group hover:text-green-600 py-4">
               <Link
                 className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out ${
@@ -176,7 +199,7 @@ const FakeNav = () => {
                 }`}
                 to="team"
                 smooth={true}
-                offset={-80}
+                offset={-60}
                 onClick={() => toggleHandler(true)}
               >
                 TEAM

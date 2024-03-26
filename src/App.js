@@ -5,15 +5,24 @@ import {
   FakeNav,
   Home,
   About,
-  Problems,
-  Mission,
-  Solution,
-  Plan,
+  // Problems,
+  // Mission,
+  // Solution,
+  // Plan,
   Team,
   Footer,
+  WhyUs,
+  Process,
+  Products,
 } from "./components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <BrowserRouter>
@@ -26,13 +35,23 @@ function App() {
                 <FakeNav />
                 <Home />
                 <About />
-                <Problems />
-                <Mission />
-                <Solution />
-                <Plan />
+                {/* <Problems /> */}
+                {/* <Mission /> */}
+                {/* <Solution /> */}
+                {/* <Plan /> */}
+                <WhyUs />
+                <Process />
                 <Team />
                 <Footer />
                 {/* <NotFound /> */}
+              </>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <>
+                <Products />
               </>
             }
           />
