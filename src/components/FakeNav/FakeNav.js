@@ -19,7 +19,7 @@ const FakeNav = () => {
   var scroll = Scroll.animateScroll;
 
   const NavScrollHandler = useCallback(() => {
-    scrollPosition > window.innerHeight - 200
+    scrollPosition > window.innerHeight - 350
       ? setNavScroller(true)
       : setNavScroller(false);
   }, [scrollPosition]);
@@ -27,7 +27,7 @@ const FakeNav = () => {
   const handleToTop = () => {
     scroll.scrollToTop();
   };
-  
+
   const toggleDropDown = (e) => {
     setDropdown(() => e);
   };
