@@ -11,19 +11,19 @@ import {
   faPiggyBank,
   faSolarPanel,
 } from "@fortawesome/free-solid-svg-icons";
-import solar from "../../Images/solar2.jpg";
+import solar from "../../Images/solar2.webp";
 
 const Process = () => {
   return (
     <>
       <div
-        className="px-8 md:px-8 lg:px-10 py-16 process-main"
+        className="px-8 py-8 md:px-8 lg:px-10 md:py-16 process-main"
         style={{
           backgroundImage: `url(${solar})`,
         }}
         name="process"
       >
-        <div className="text-center py-8 md:mb-8">
+        <div className="text-center py-4 md:mb-8">
           <p
             className="font-body tracking-wider font-semibold text-green-400 pb-4 uppercase"
             style={{ textShadow: `0 3px 6px rgba(0, 0, 0, 0.19)` }}

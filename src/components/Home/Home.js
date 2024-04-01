@@ -6,7 +6,7 @@ import "./Home.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 // import axios from "axios";
-import background from "../../Images/solar1.jpg";
+import background from "../../Images/solar1.webp";
 
 const Home = () => {
   // const [Images, setImages] = useState([]);
@@ -38,11 +38,9 @@ const Home = () => {
   return (
     <>
       <div
-        className="h-[60vh] md:h-[90vh] flex flex-col md:flex md:flex-row justify-left shadow-lg gap-8"
+        className="h-[60vh] md:h-[90vh] flex flex-col md:flex md:flex-row justify-left shadow-lg gap-8 banner"
         style={{
           backgroundImage: `url(${background})`,
-          backgroundSize: `100% 100%`,
-          boxShadow: `inset 2000px 0 0 0 rgba(0, 0, 0, 0.15)`,
         }}
         name="home"
       >

@@ -1,0 +1,5 @@
+.product-banner {
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.15);
+}

@@ -53,7 +53,7 @@ const FakeNav = () => {
         }}
       >
         <div
-          className={`z-10 px-4 md:px-8 lg:px-24 md:flex items-center justify-between w-full`}
+          className={`z-10 px-4 md:px-8 lg:px-12 md:flex items-center justify-between w-full`}
         >
           <div
             className={`py-4 md:py-3 flex justify-between items-center h-16 md:h-12 lg:h-20`}
@@ -95,7 +95,7 @@ const FakeNav = () => {
             )}
           </div>
           <div
-            className={`md:gap-1 lg:gap-10 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-lg pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
+            className={`md:gap-1 lg:gap-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-lg pb-2 ps-0 md:pb-0 md:ps-2 h-[92vh] z-50 bg-white w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
               Nav ? "hidden" : ""
             }`}
             id="navbarSupportedContent1"
@@ -216,6 +216,18 @@ const FakeNav = () => {
               >
                 CONTACT
               </Link>
+            </div>
+            <div className="cursor-pointer group py-4">
+              <OuterLink
+                className={`font-medium p-3 rounded bg-purple-500 text-white hover:bg-yellow-500 transition-all duration-200 ease-out`}
+                to="/products"
+                relative="path"
+                smooth={true}
+                offset={-10}
+                onClick={() => toggleHandler(true)}
+              >
+                FREE QUOTE
+              </OuterLink>
             </div>
           </div>
         </div>

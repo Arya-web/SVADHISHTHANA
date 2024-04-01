@@ -1,15 +1,14 @@
 import React from "react";
-import background from "../../Images/solar3.jpg";
+import background from "../../Images/solar3.webp";
+import "./Banner.css";
 
 const Banner = () => {
   return (
     <>
       <div
-        className="h-[50vh] md:h-[80vh] flex flex-col md:flex md:flex-row justify-left shadow-lg gap-8"
+        className="h-[50vh] md:h-[80vh] flex flex-col md:flex md:flex-row justify-left shadow-lg gap-8 product-banner"
         style={{
           backgroundImage: `url(${background})`,
-          backgroundSize: `100% 100%`,
-          boxShadow: `inset 2000px 0 0 0 rgba(0, 0, 0, 0.25)`,
         }}
         name="home"
       >

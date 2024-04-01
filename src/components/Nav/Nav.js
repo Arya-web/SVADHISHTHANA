@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import logoBlack from "../../Images/logo512-black.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import { Link as OuterLink } from "react-router-dom";
 
@@ -25,7 +22,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`z-50 px-4 md:px-8 lg:px-20 md:flex items-center justify-between w-full bg-white drop-shadow-lg`}
+        className={`z-50 px-4 md:px-8 lg:px-12 md:flex items-center justify-between w-full bg-white drop-shadow-lg`}
         style={{
           boxShadow: `rgba(0, 0, 0, 0.17) 0px 6px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
         }}
@@ -70,7 +67,7 @@ const Nav = () => {
           <div className="cursor-pointer group hover:text-green-600 py-4">
             <Link
               className={`font-medium p-2 rounded transition-all duration-200 ease-out hover:bg-green-500 hover:text-white bg-green-500 text-white`}
-              to="home"
+              to="#"
               smooth={true}
               onClick={() => toggleHandler(true)}
             >
@@ -164,6 +161,18 @@ const Nav = () => {
             >
               CONTACT
             </Link>
+          </div>
+          <div className="cursor-pointer group py-4">
+            <OuterLink
+              className={`font-medium p-3 rounded bg-purple-500 text-white hover:bg-yellow-500 transition-all duration-200 ease-out`}
+              to="/products"
+              relative="path"
+              smooth={true}
+              offset={-10}
+              onClick={() => toggleHandler(true)}
+            >
+              FREE QUOTE
+            </OuterLink>
           </div>
         </div>
       </div>
