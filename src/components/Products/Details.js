@@ -152,7 +152,7 @@ const Details = () => {
                 <h2 className="mt-4 text-xl uppercase tracking-wider">
                   <strong>Payback Period</strong>
                 </h2>
-                <p>43 Years 1KW Wind, 400W Solar</p>
+                <p>3 to 4 Years 1KW Wind, 400W Solar</p>
               </div>
             </div>
           </div>
@@ -215,7 +215,7 @@ const Details = () => {
                 </li>
               </ul>
             </div>
-            <div className="md:w-full grid grid-cols-1 md:grid-cols-1 gap-4">
+            <div className="md:w-full grid grid-cols-1 md:grid-cols-1 gap-4 pt-8 md:py-0">
               <img src={og2} alt="" />
             </div>
           </div>

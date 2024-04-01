@@ -50,7 +50,7 @@ const Process = () => {
               Free Quote
             </h3>
             <p className="font-body">
-              Contact US for your free quote from Swadhisthana Green
+              Contact US for your free quote from Svadhishthana Green
               Technologies.
             </p>
           </VerticalTimelineElement>
@@ -82,7 +82,7 @@ const Process = () => {
               Choose Your System
             </h3>
             <p className="font-body">
-              Decide on your system and let IGT do the rest. Your turnkey solar
+              Decide on your system and let us do the rest. Your turnkey solar
               project begins!
             </p>
           </VerticalTimelineElement>

@@ -8,6 +8,7 @@ import { Link as OuterLink } from "react-router-dom";
 
 const Nav = () => {
   const [Nav, setNav] = useState(true);
+  const [Dropdown, setDropdown] = useState(false);
 
   useEffect(() => {
     if (!Nav) {
@@ -19,6 +20,11 @@ const Nav = () => {
   const toggleHandler = (e) => {
     setNav(() => e);
   };
+
+  const toggleDropDown = (e) => {
+    setDropdown(() => e);
+  };
+
   return (
     <>
       <div
@@ -58,9 +64,9 @@ const Nav = () => {
           )}
         </div>
         <div
-          className={`md:gap-1 lg:gap-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-lg pb-2 ps-0 md:pb-0 md:ps-2 z-50 bg-white h-[92vh] w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto pt-32 md:pt-0 ${
+          className={`md:gap-1 lg:gap-8 !visible md:!flex md:basis-auto font-body md:text-xs lg:text-lg pb-2 ps-0 md:pb-0 md:ps-2 z-50 bg-white h-[92vh] w-screen md:h-auto md:w-auto text-center fixed md:static left-0 md:left-auto md:pt-0 ${
             Nav ? "hidden" : ""
-          }`}
+          } ${Dropdown ? "pt-16" : "pt-32"}`}
           id="navbarSupportedContent1"
           data-te-collapse-item
         >
@@ -107,17 +113,34 @@ const Nav = () => {
               THE PROCESS
             </Link>
           </div>
-          <div className="cursor-pointer group hover:text-green-600 py-4">
-            <OuterLink
+          <div
+            className="flex flex-col items-center cursor-pointer group hover:text-green-600 py-2"
+            onMouseEnter={() => toggleDropDown(true)}
+            onMouseLeave={() => toggleDropDown(false)}
+          >
+            <div
               className={`font-medium p-2 rounded hover:bg-green-500 hover:text-white transition-all duration-200 ease-out`}
-              to="/products"
-              relative="path"
               smooth={true}
               offset={-10}
-              onClick={() => toggleHandler(true)}
             >
               PRODUCTS
-            </OuterLink>
+            </div>
+            <div
+              className={`md:absolute flex flex-col gap-4 bg-white text-black px-4 py-4 mt-4 md:mt-12 rounded-md opacity-95 uppercase border-2 font-medium border-black-500 ${
+                Dropdown ? "" : "hidden"
+              }`}
+            >
+              <div>
+                <OuterLink to="/products">SOLAR GUSTIX & OMNI GUSTIX</OuterLink>
+              </div>
+              <hr className="h-[2px] bg-black-500" />
+              <div className="flex justify-center items-center">
+                Solar lights{" "}
+                <p className="ms-6 text-sm bg-red-500 text-white p-1 px-2 rounded-md">
+                  PDF
+                </p>
+              </div>
+            </div>
           </div>
           {/* <div className="cursor-pointer group hover:text-green-600 py-4">
             <Link
